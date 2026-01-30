@@ -6,6 +6,9 @@ from discord.ext import commands
 from discord import app_commands
 from dotenv import load_dotenv
 
+# Disable voice support to avoid audioop dependency
+discord.VoiceClient = None
+
 # ----------------------------
 # ENV + CONFIG
 # ----------------------------
